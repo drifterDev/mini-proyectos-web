@@ -180,3 +180,20 @@ WHERE id NOT IN (
 
 /*
  Calcular el total de ingresos generados por cada hotel en un período de tiempo determinado.*/
+
+SELECT
+    ho.nombre,
+    SUM(
+        ha.precio * DATEDIFF(
+            re.fecha_recogida,
+            re.fecha_entrega
+        )
+    )
+FROM hoteles ho
+    INNER JOIN habitaciones ha, reservas re
+WHERE
+    ha.id = re.habitacion_id
+    AND ho.id = ha.hotel_id
+    AND '2024-08-15' >= re.fecha_entrega
+    AND '2022-08-20' <= re.fecha_recogida
+GROUP BY ho.id;
