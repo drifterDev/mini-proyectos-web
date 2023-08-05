@@ -53,13 +53,7 @@ CREATE TABLE
         fecha_entrega DATETIME NOT NULL,
         fecha_recogida DATETIME NOT NULL,
         cliente_id INT NOT NULL,
-        CONSTRAINT fk_reserva_cliente FOREIGN KEY (cliente_id) REFERENCES clientes(`id`) ON UPDATE CASCADE ON DELETE CASCADE
-    );
-
-CREATE TABLE
-    habitaciones_has_reservas(
-        id_habitacion INT NOT NULL,
-        id_reserva INT NOT NULL,
-        CONSTRAINT fk_habitacion_reserva FOREIGN KEY (id_habitacion) REFERENCES habitaciones(`id`) ON UPDATE CASCADE ON DELETE CASCADE,
-        CONSTRAINT fk_reserva_habitacion FOREIGN KEY (id_reserva) REFERENCES reservas(`id`) ON UPDATE CASCADE ON DELETE CASCADE
+        habitacion_id INT NOT NULL,
+        CONSTRAINT fk_reserva_cliente FOREIGN KEY (cliente_id) REFERENCES clientes(`id`) ON UPDATE CASCADE ON DELETE CASCADE,
+        CONSTRAINT fk_reserva_habitacion FOREIGN KEY (habitacion_id) REFERENCES habitaciones(`id`) ON UPDATE CASCADE ON DELETE CASCADE
     );
