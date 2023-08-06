@@ -11,32 +11,20 @@
     />
     <title>Space tourism website</title>
     <link rel="stylesheet" href="styles/output.css" />
-    <style>
-      .blur-background {
-        backdrop-filter: blur(
-          8px
-        ); /* Ajusta el valor de blur según lo desees */
-      }
-
-      .blur2 {
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.774227142333984px);
-      }
-    </style>
   </head>
-  <body class="container">
+  <body class="w-full">
     <main
-      class="w-screen h-screen md:h-auto bg-[url('../assets/home/background-home-mobile.jpg')] sm:bg-[url('../assets/home/background-home-tablet.jpg')] bg-no-repeat bg-center bg-cover md:bg-[url('../assets/home/background-home-desktop.jpg')]"
+      class="w-full h-screen md:h-auto bg-[url('../assets/home/background-home-mobile.jpg')] sm:bg-[url('../assets/home/background-home-tablet.jpg')] bg-no-repeat bg-center bg-cover md:bg-[url('../assets/home/background-home-desktop.jpg')]"
     >
       <!-- Barra navegacion -->
       <nav
-        class="flex w-full flex-row px-5 pt-4 justify-between items-center h-20 md:px-16 md:pt-16"
+        class="flex w-full flex-row px-5 sm:px-0 pt-4 justify-between items-center h-20 md:pt-16"
       >
         <div
-          class="h-8 w-8 bg-[url('../assets/shared/logo.svg')] bg-no-repeat bg-cover bg-center text-whitep md:h-16 md:w-16"
+          class="h-8 w-8 bg-[url('../assets/shared/logo.svg')] bg-no-repeat bg-cover bg-center text-whitep sm:h-12 sm:w-12 sm:ml-8 md:ml-16"
         ></div>
         <!-- menu lateral -->
-        <div>
+        <div class="sm:w-[450px] sm:blur2 sm:pl-8 sm:h-[96px] md:w-[830px]">
           <!-- Boton responsive -->
           <input
             type="checkbox"
@@ -47,50 +35,50 @@
           />
           <label
             for="hamburger"
-            class="fixed inline-block scale-50 right-6 top-6 bg-[url('../assets/shared/icon-hamburger.svg')] bg-no-repeat bg-center bg-cover peer-checked:bg-[url('../assets/shared/icon-close.svg')] z-20 cursor-pointer md:hidden transition p-5"
+            class="fixed inline-block scale-50 right-6 top-6 bg-[url('../assets/shared/icon-hamburger.svg')] bg-no-repeat bg-center bg-cover peer-checked:bg-[url('../assets/shared/icon-close.svg')] z-20 cursor-pointer sm:hidden transition p-5"
           >
           </label>
 
           <!-- cuerpo de los enlaces -->
           <div
-            class="text-whitep blur-background w-3/5 shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[170%] peer-checked:translate-x-[70%] md:static md:shadow-none md:translate-x-0 md:flex-row md:h-32 md:gap-16 md:left-0 md:w-full"
+            class="text-whitep blur-background w-4/5 sm:w-full shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[170%] peer-checked:translate-x-[60%] sm:static sm:shadow-none sm:translate-x-0 sm:flex-row sm:gap-16 sm:left-0"
           >
             <!-- enlaces -->
             <div
-              class="px-6 pt-32 flex flex-col md:flex-row md:items-center gap-3 md:p-0"
+              class="px-6 pt-32 flex flex-col sm:flex-row sm:items-end gap-3 sm:p-0 sm:m-0 sm:h-[96px] md:w-full md:gap-8 md:pl-16"
             >
               <a
                 href=""
-                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 text-white border-whitep sm:border-b-2"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 text-whitep border-b-2 border-whitep sm:border-b-2 sm:pb-8 md:flex md:flex-row"
                 ><span
-                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden"
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
                   >00</span
                 >
                 Home</a
               >
               <a
                 href=""
-                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 sm:pb-8 md:flex md:flex-row"
                 ><span
-                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden"
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
                   >01</span
                 >
                 Destination</a
               >
               <a
                 href=""
-                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 sm:pb-8 md:flex md:flex-row"
                 ><span
-                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden"
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
                   >02</span
                 >
                 Crew</a
               >
               <a
                 href=""
-                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 sm:pb-8 md:flex md:flex-row"
                 ><span
-                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden"
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
                   >03</span
                 >
                 Technology</a
@@ -101,20 +89,26 @@
       </nav>
 
       <!-- contenido -->
-      <div class="flex flex-col justify-center items-center mt-5 sm:mt-32">
+      <div
+        class="flex flex-col justify-center items-center mt-5 sm:mt-32 md:flex-row md:justify-between md:pt-16 md:pb-32 md:mx-32"
+      >
         <!-- informacion -->
-        <div class="flex flex-col text-whitep text-center px-4 mt-5 sm:px-40">
+        <div
+          class="flex flex-col text-whitep text-center px-4 mt-5 sm:px-40 md:p-0 md:w-[444px] md:text-left"
+        >
           <p
-            class="font-barlow text-[16px] tracking-[2.7px] uppercase sm:text-[20px] sm:tracking-[3.37px] sm:text-whitep/70"
+            class="font-barlow text-[16px] tracking-[2.7px] uppercase sm:text-[20px] sm:tracking-[3.37px] sm:text-whitep/70 md:text-[28px] md:tracking-[4.7px]"
           >
             So, you want to travel to
           </p>
           <h1
-            class="font-belle text-[80px] uppercase mb-3 sm:text-[150px] sm:mb-[-12px]"
+            class="font-belle text-[80px] uppercase mb-3 sm:text-[150px] sm:mb-[-12px] md:text-[150px]"
           >
             Space
           </h1>
-          <p class="font-barlow text-[15px] sm:text-[16px] sm:text-whitep/70">
+          <p
+            class="font-barlow text-[15px] sm:text-[16px] sm:text-whitep/70 md:text-[18px]"
+          >
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
@@ -123,7 +117,7 @@
         </div>
         <!-- explora -->
         <div
-          class="cursor-pointer w-32 h-32 bg-whitep rounded-full mt-20 flex items-center justify-center shadow transition-transform hover:shadow-sombra sm:mt-40 sm:mb-40 sm:w-64 sm:h-64 sm:hover:shadow-sombra2"
+          class="cursor-pointer w-32 h-32 md:w-[274px] md:h-[274px] bg-whitep rounded-full mt-20 flex items-center justify-center shadow transition-transform hover:shadow-sombra sm:mt-32 sm:mb-36 sm:w-64 sm:h-64 sm:hover:shadow-sombra2"
         >
           <p class="font-belle text-[20px] sm:text-[32px] sm:tracking-[2px]">
             Explore

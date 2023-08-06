@@ -3,3 +3,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #4a5568; /* Color del pulgar de la barra (gris oscuro) */
+  }
+
+  /* Estilos para personalizar la barra de desplazamiento en navegadores no basados en WebKit (Firefox) */
+  * {
+    scrollbar-width: thin; /* Ancho de la barra en Firefox */
+    scrollbar-color: #4a5568 #2d3748; /* Color del pulgar y fondo de la barra en Firefox (gris oscuro) */
+  }
+}
+
+@layer utilities {
+  .blur-background {
+    backdrop-filter: blur(8px); /* Ajusta el valor de blur según lo desees */
+  }
+
+  .blur2 {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+  }
+}
