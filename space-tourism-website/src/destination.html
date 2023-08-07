@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Space tourism website</title>
+    <link rel="stylesheet" href="styles/output.css" />
+  </head>
+  <body class="w-full">
+    <main
+      class="w-full h-screen md:h-auto bg-[url('../assets/destination/background-destination-mobile.jpg')] sm:bg-[url('../assets/destination/background-destination-tablet.jpg')] bg-no-repeat bg-center bg-cover md:bg-[url('../assets/destination/background-destination-desktop.jpg')]"
+    >
+      <!-- Barra navegacion -->
+      <nav
+        class="flex w-full flex-row px-5 sm:px-0 pt-4 justify-between items-center h-20 md:pt-16"
+      >
+        <div
+          class="h-8 w-8 bg-[url('../assets/shared/logo.svg')] bg-no-repeat bg-cover bg-center text-whitep sm:h-12 sm:w-12 sm:ml-8 md:ml-16"
+        ></div>
+        <!-- menu lateral -->
+        <div class="sm:w-[450px] sm:blur2 sm:pl-8 sm:h-[96px] md:w-[830px]">
+          <!-- Boton responsive -->
+          <input
+            type="checkbox"
+            name="hamburger"
+            id="hamburger"
+            class="peer"
+            hidden
+          />
+          <label
+            for="hamburger"
+            class="fixed inline-block scale-50 right-6 top-6 bg-[url('../assets/shared/icon-hamburger.svg')] bg-no-repeat bg-center bg-cover peer-checked:bg-[url('../assets/shared/icon-close.svg')] z-20 cursor-pointer sm:hidden transition p-5"
+          >
+          </label>
+
+          <!-- cuerpo de los enlaces -->
+          <div
+            class="text-whitep blur-background w-4/5 sm:w-full shadow-lg transition flex flex-col justify-between fixed inset-0 translate-x-[170%] peer-checked:translate-x-[60%] sm:static sm:shadow-none sm:translate-x-0 sm:flex-row sm:gap-16 sm:left-0"
+          >
+            <!-- enlaces -->
+            <div
+              class="px-6 pt-32 flex flex-col sm:flex-row sm:items-end gap-3 sm:p-0 sm:m-0 sm:h-[96px] md:w-full md:gap-8 md:pl-16"
+            >
+              <a
+                href="home.html"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 sm:pb-8 md:flex md:flex-row"
+                ><span
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
+                  >00</span
+                >
+                Home</a
+              >
+              <a
+                href="destination.html"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 text-whitep border-b-2 border-whitep sm:border-b-2 sm:pb-8 md:flex md:flex-row"
+                ><span
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
+                  >01</span
+                >
+                Destination</a
+              >
+              <a
+                href="crew.html"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 sm:pb-8 md:flex md:flex-row"
+                ><span
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
+                  >02</span
+                >
+                Crew</a
+              >
+              <a
+                href="technology.html"
+                class="font-barlow text-[16px] tracking-[2.7px] cursor-pointer px-3 py-2 hover:text-white/50 hover:border-b-2 hover:border-whitep/50 sm:pb-8 md:flex md:flex-row"
+                ><span
+                  class="font-barlow text-[16px] tracking-[2.7px] font-bold sm:hidden md:block md:mr-5"
+                  >03</span
+                >
+                Technology</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- contenido -->
+      <div class="md:flex md:flex-row">
+        <!-- imagen -->
+        <div class="w-full flex flex-col items-center mt-5 md:mt-28">
+          <div
+            class="w-full flex flex-row text-center justify-center sm:justify-start sm:ml-16 sm:mt-8 sm:w-[90%] md:w-[60%] md:ml-16"
+          >
+            <span
+              id="number"
+              class="font-barlow text-[16px] sm:text-[20px] tracking-[2.7px] sm:tracking-[3.3px] text-whitep/25 md:text-[28px] md:tracking-[4.7px]"
+              >01
+            </span>
+            <p
+              class="ml-5 font-barlow text-[16px] sm:text-[20px] tracking-[2.7px] sm:tracking-[3.3px] text-whitep uppercase md:text-[28px] md:tracking-[4.7px]"
+            >
+              Pick your destination
+            </p>
+          </div>
+          <div
+            class="w-48 h-48 mt-10 sm:w-64 sm:h-64 sm:mt-16 md:w-[420px] md:h-[420px] md:ml-20 md:mb-32 md:mt-[86px]"
+          >
+            <img
+              id="imagen-destination"
+              src="assets/destination/image-moon.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- informacion planeta -->
+        <div class="flex flex-col items-center w-full mt-10">
+          <!-- opciones -->
+          <div class="w-full md:mt-44 md:mr-40">
+            <form action="" class="flex flex-row justify-around mx-16 sm:mx-56">
+              <input
+                value="moon"
+                type="radio"
+                name="destination"
+                id="moon"
+                class="hidden peer/moon"
+                checked
+              />
+              <label
+                for="moon"
+                class="cursor-pointer font-barlow text-[14px] sm:text-[16px] tracking-[2.36px] md:tracking-[2.7px] text-whitep/50 peer-checked/moon:text-whitep peer-checked/moon:border-whitep peer-checked/moon:border-b-2 uppercase pb-2 hover:border-b-2 hover:border-whitep/50"
+                >Moon
+              </label>
+              <input
+                value="mars"
+                type="radio"
+                name="destination"
+                id="mars"
+                class="hidden peer/mars"
+              />
+              <label
+                for="mars"
+                class="cursor-pointer font-barlow text-[14px] sm:text-[16px] tracking-[2.36px] md:tracking-[2.7px] text-whitep/50 peer-checked/mars:text-whitep peer-checked/mars:border-whitep peer-checked/mars:border-b-2 uppercase pb-2 hover:border-b-2 hover:border-whitep/50"
+                >Mars
+              </label>
+              <input
+                value="europa"
+                type="radio"
+                name="destination"
+                id="europa"
+                class="hidden peer/europa"
+              />
+              <label
+                for="europa"
+                class="cursor-pointer font-barlow text-[14px] sm:text-[16px] tracking-[2.36px] md:tracking-[2.7px] text-whitep/50 peer-checked/europa:text-whitep peer-checked/europa:border-whitep peer-checked/europa:border-b-2 uppercase pb-2 hover:border-b-2 hover:border-whitep/50"
+                >Europa
+              </label>
+              <input
+                value="titan"
+                type="radio"
+                name="destination"
+                id="titan"
+                class="hidden peer/titan"
+              />
+              <label
+                for="titan"
+                class="cursor-pointer font-barlow text-[14px] sm:text-[16px] tracking-[2.36px] md:tracking-[2.7px] text-whitep/50 peer-checked/titan:text-whitep peer-checked/titan:border-whitep peer-checked/titan:border-b-2 uppercase pb-2 hover:border-b-2 hover:border-whitep/50"
+                >Titan
+              </label>
+            </form>
+          </div>
+          <!-- informacion planeta -->
+          <div
+            class="w-[80%] flex flex-col items-center text-center mt-3 pb-5 border-b-[1px] border-whitep/30 sm:w-[65%] md:text-left md:items-start md:w-[60%]"
+          >
+            <h1
+              id="title"
+              class="font-belle text-[56px] text-whitep uppercase sm:text-[80px] sm:mt-5 md:text-[100px]"
+            >
+              Moon
+            </h1>
+            <p
+              id="description"
+              class="font-barlow text-[15px] text-whitep/70 sm:text-[16px] sm:pb-5 md:text-[18px]"
+            >
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+          </div>
+          <!-- informacion numerica -->
+          <div
+            class="flex flex-col w-full items-center text-center mt-5 sm:flex-row sm:justify-center sm:mt-10 md:justify-start md:w-[60%]"
+          >
+            <div>
+              <p
+                class="font-barlow text-[14px] tracking-[2.36px] uppercase text-whitep/60 sm:mb-2"
+              >
+                Avg. distance
+              </p>
+              <p
+                id="distance"
+                class="font-belle uppercase text-whitep text-[28px]"
+              >
+                384,400 km
+              </p>
+            </div>
+            <div class="mt-5 sm:mt-0 sm:ml-16">
+              <p
+                class="font-barlow text-[14px] tracking-[2.36px] uppercase text-whitep/60 sm:mb-2"
+              >
+                Est. travel time
+              </p>
+              <p
+                id="travel"
+                class="font-belle uppercase text-whitep text-[28px]"
+              >
+                3 days
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/destination.js"></script>
+  </body>
+</html>
