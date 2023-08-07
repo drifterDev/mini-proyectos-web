@@ -28,7 +28,7 @@ async function cambiarInfo(value) {
 
 async function getInfo(value) {
   try {
-    const response = await fetch("scripts/data.json");
+    const response = await fetch("js/data.json");
     if (!response.ok) {
       throw new Error(
         "Error en la petición. Código de estado: " + response.status
