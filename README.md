@@ -1,6 +1,6 @@
 # Proyectos Web
 
-Este repositorio es un espacio dedicado a los proyectos y miniproyectos web que voy creando durante mi aprendizaje para convertirme en un desarrollador web. Aquí encontrarás una variedad de proyectos que abarcan diferentes tecnologías y conceptos relacionados con el desarrollo web.
+Este repositorio es un espacio dedicado a los proyectos y miniproyectos web que voy creando durante mi aprendizaje para convertirme en un desarrollador web. Aquí se encuentra una variedad de proyectos que abarcan diferentes tecnologías y conceptos relacionados con el desarrollo web.
 
 ## Contenido del Repositorio
 
