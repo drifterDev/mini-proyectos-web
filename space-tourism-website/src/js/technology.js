@@ -4,6 +4,18 @@ const title = document.getElementById("title-tecno");
 const description = document.getElementById("description-tecno");
 const img = document.getElementById("imagen-tecno");
 const radios = document.getElementsByName("tecno");
+const logo = document.getElementById("logo");
+
+logo.addEventListener("click", () => {
+  window.location.href = "home.html";
+});
+
+window.addEventListener("load", () => {
+  img.src =
+    window.innerWidth > 800
+      ? "./assets/technology/image-launch-vehicle-portrait.jpg"
+      : "./assets/technology/image-launch-vehicle-landscape.jpg";
+});
 
 radios.forEach((radio) => {
   radio.addEventListener("change", () => {

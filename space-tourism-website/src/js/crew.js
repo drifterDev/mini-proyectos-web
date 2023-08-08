@@ -5,6 +5,11 @@ const title = document.getElementById("name-crew");
 const description = document.getElementById("description-crew");
 const img = document.getElementById("imagen-crew");
 const radios = document.getElementsByName("crew");
+const logo = document.getElementById("logo");
+
+logo.addEventListener("click", () => {
+  window.location.href = "home.html";
+});
 
 radios.forEach((radio) => {
   radio.addEventListener("change", () => {

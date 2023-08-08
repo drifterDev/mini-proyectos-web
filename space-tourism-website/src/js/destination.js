@@ -6,6 +6,11 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const distance = document.getElementById("distance");
 const travel = document.getElementById("travel");
+const logo = document.getElementById("logo");
+
+logo.addEventListener("click", () => {
+  window.location.href = "home.html";
+});
 
 radios.forEach((radio) => {
   radio.addEventListener("change", () => {

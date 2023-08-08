@@ -21,7 +21,8 @@
         class="flex w-full flex-row px-5 sm:px-0 pt-4 justify-between items-center h-20 md:pt-16"
       >
         <div
-          class="h-8 w-8 bg-[url('../assets/shared/logo.svg')] bg-no-repeat bg-cover bg-center text-whitep sm:h-12 sm:w-12 sm:ml-8 md:ml-16"
+          id="logo"
+          class="h-8 w-8 bg-[url('../assets/shared/logo.svg')] bg-no-repeat bg-cover bg-center text-whitep sm:h-12 sm:w-12 sm:ml-8 md:ml-16 cursor-pointer"
         ></div>
         <!-- menu lateral -->
         <div class="sm:w-[450px] sm:blur2 sm:pl-8 sm:h-[96px] md:w-[830px]">
@@ -91,30 +92,35 @@
       <!-- contenido -->
       <div class="w-full flex flex-col items-center">
         <!-- titulo -->
-        <div class="flex mt-5">
+        <div
+          class="flex mt-5 sm:mt-10 sm:justify-start sm:w-full sm:pl-16 md:mt-28 md:pl-32"
+        >
           <span
-            class="font-barlow text-[16px] tracking-[2.7px] text-whitep/25 mr-3"
+            class="font-barlow text-[16px] tracking-[2.7px] sm:text-[20px] sm:tracking-[3.3px] md:text-[28px] md:tracking-[4.7px] text-whitep/25 mr-3"
             >03</span
           >
           <p
-            class="font-barlow text-[16px] tracking-[2.7px] text-whitep uppercase"
+            class="font-barlow text-[16px] tracking-[2.7px] sm:text-[20px] sm:tracking-[3.3px] md:text-[28px] md:tracking-[4.7px] text-whitep uppercase"
           >
             SPACE LAUNCH 101
           </p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center sm:mt-3 md:w-full md:flex-row">
           <!-- imagen -->
-          <div class="w-full h-auto mt-8">
+          <div class="w-full h-auto mt-8 md:order-3 md:h-[500px] md:mt-0">
             <img
               id="imagen-tecno"
-              class="object-contain w-full"
+              class="object-contain w-full md:object-cover md:h-full"
               src="assets/technology/image-launch-vehicle-landscape.jpg"
               alt=""
             />
           </div>
           <div>
             <!-- opciones -->
-            <form action="" class="w-full flex flex-row justify-center mt-8">
+            <form
+              action=""
+              class="w-full flex flex-row justify-center mt-8 md:order-1 md:flex-col ml-32 md:mt-32"
+            >
               <input
                 class="hidden peer/uno"
                 checked
@@ -125,7 +131,7 @@
               />
               <label
                 for="uno"
-                class="w-[40px] h-[40px] peer-checked/uno:bg-white peer-checked/uno:text-darkp text-whitep border-[1px] border-whitep/25 bg-darkp rounded-full flex justify-center items-center text-[16px] font-belle tracking-[1px] hover:border-whitep/50 mr-5"
+                class="w-[40px] h-[40px] peer-checked/uno:bg-white peer-checked/uno:text-darkp text-whitep border-[1px] border-whitep/25 bg-darkp rounded-full flex justify-center items-center text-[16px] font-belle tracking-[1px] hover:border-whitep/50 mr-5 sm:text-[24px] sm:tracking-[1.5px] sm:w-[60px] sm:h-[60px] md:mb-8 md:text-[32px] md:w-[80px] md:h-[80px]"
                 >1</label
               >
               <input
@@ -137,7 +143,7 @@
               />
               <label
                 for="dos"
-                class="w-[40px] h-[40px] peer-checked/dos:bg-white peer-checked/dos:text-darkp text-whitep border-[1px] border-whitep/25 bg-darkp rounded-full flex justify-center items-center text-[16px] font-belle tracking-[1px] hover:border-whitep/50 mr-5"
+                class="w-[40px] h-[40px] peer-checked/dos:bg-white peer-checked/dos:text-darkp text-whitep border-[1px] border-whitep/25 bg-darkp rounded-full flex justify-center items-center text-[16px] font-belle tracking-[1px] hover:border-whitep/50 mr-5 sm:text-[24px] sm:tracking-[1.5px] sm:w-[60px] sm:h-[60px] md:mb-8 md:text-[32px] md:w-[80px] md:h-[80px]"
                 >2</label
               >
               <input
@@ -149,25 +155,29 @@
               />
               <label
                 for="tres"
-                class="w-[40px] h-[40px] peer-checked/tres:bg-white peer-checked/tres:text-darkp text-whitep border-[1px] border-whitep/25 bg-darkp rounded-full flex justify-center items-center text-[16px] font-belle tracking-[1px] hover:border-whitep/50"
+                class="w-[40px] h-[40px] peer-checked/tres:bg-white peer-checked/tres:text-darkp text-whitep border-[1px] border-whitep/25 bg-darkp rounded-full flex justify-center items-center text-[16px] font-belle tracking-[1px] hover:border-whitep/50 sm:text-[24px] sm:tracking-[1.5px] sm:w-[60px] sm:h-[60px] md:mb-8 md:text-[32px] md:w-[80px] md:h-[80px]"
                 >3</label
               >
             </form>
           </div>
           <!-- informacion -->
-          <div class="flex items-center w-full flex-col mt-5">
-            <p class="text-[14px] font-barlow tracking-[2.3px] text-whitep/50">
+          <div
+            class="flex items-center w-full flex-col mt-5 sm:mt-16 md:order-2 md:items-start md:ml-10 md:mr-2"
+          >
+            <p
+              class="text-[14px] font-barlow tracking-[2.3px] md:tracking-[2.7px] sm:text-[16px] sm:tracking-[2.7px] text-whitep/50"
+            >
               THE TERMINOLOGY…
             </p>
             <h1
               id="title-tecno"
-              class="font-belle text-[24px] uppercase text-whitep mt-2"
+              class="font-belle text-[24px] uppercase md:text-[56px] text-whitep mt-2 sm:text-[40px]"
             >
               LAUNCH VEHICLE
             </h1>
             <p
               id="description-tecno"
-              class="font-barlow text-[15px] text-whitep/50 text-center mt-3 px-10"
+              class="font-barlow text-[15px] text-whitep/50 md:text-[18px] md:leading-8 text-center mt-3 px-10 sm:text-[16px] sm:px-36 sm:leading-7 md:text-left md:p-0 md:pr-32"
             >
               A launch vehicle or carrier rocket is a rocket-propelled vehicle
               used to carry a payload from Earth's surface to space, usually to
