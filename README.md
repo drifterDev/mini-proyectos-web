@@ -1,14 +1,6 @@
 # Proyectos Web
 
-Este repositorio es un espacio dedicado a los proyectos y miniproyectos web que voy creando durante mi aprendizaje para convertirme en un desarrollador web. Aquí se encuentra una variedad de proyectos que abarcan diferentes tecnologías y conceptos relacionados con el desarrollo web.
-
-## Contenido del Repositorio
-
-Dentro de este repositorio, podrás encontrar los siguientes recursos:
-
-- **Proyectos completos**: Carpeta que contiene proyectos web terminados y funcionales. Cada proyecto tendrá su propia carpeta con todos los archivos necesarios.
-
-- **Miniproyectos**: Carpeta que alberga miniproyectos web más pequeños y enfocados en prácticas específicas. Estos miniproyectos son ideales para consolidar conocimientos en tecnologías como HTML, CSS, JavaScript, y más.
+Este repositorio es un espacio dedicado a los miniproyectos web que voy creando durante mi aprendizaje para convertirme en un desarrollador web. Aquí se encuentra una variedad de proyectos que abarcan diferentes tecnologías y conceptos relacionados con el desarrollo web.
 
 ## Contribuciones
 
